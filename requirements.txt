@@ -1,0 +1,4 @@
+altair
+pandas
+PIL
+st-gsheets-connection
