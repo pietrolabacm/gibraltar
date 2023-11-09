@@ -5,6 +5,8 @@ import datetime as dt
 from PIL import Image
 from streamlit_gsheets import GSheetsConnection
 
+st.set_page_config(page_title='Gibraltar Registry', page_icon=':bar_chart:')
+
 def drawSideBar(df, displayDf):
     with st.sidebar:
         selectDate = st.date_input('Data',

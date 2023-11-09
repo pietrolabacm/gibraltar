@@ -1,4 +1,4 @@
-/.streamlit
 /abacus.png
 /secrets.txt
 /__pycache__
+.streamlit/secrets.toml

@@ -2,6 +2,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 from Dashboard import fetchDb
 
+st.set_page_config(page_title='Gibraltar Registry', page_icon=':bar_chart:')
+
 if 'counter' not in st.session_state:
     st.session_state['counter'] = 0
 
@@ -14,7 +16,6 @@ gasto = st.text_input('Gasto')
 categoria = st.selectbox('Categoria', set(df['Categoria']))
 pagador = st.selectbox('Pagador', set(df['Pagador']))
 cartao = st.selectbox('$', set(df['$']))
-
 
 if st.button('Submit'):
     inputIndex = displayDf.index[-1]+1
