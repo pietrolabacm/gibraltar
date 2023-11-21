@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from Dashboard import fetchDb
+from Sumario import fetchDb
 
 st.set_page_config(page_title='Gibraltar Registry', page_icon=':bar_chart:')
 
